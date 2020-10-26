@@ -1,6 +1,11 @@
 const express = require('express');
 const app = express();
 
+app.get('/',function(req,res)
+{
+res.send('Hello World!');
+});
+
 app.get('/test', (req, res) => {
     res.json({ text: 'optimized backend' });
   });
